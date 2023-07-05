@@ -15,5 +15,6 @@ def commodity_scrap(year = 1988):
     return data_json
 
 hs6_array = hs6_scrap()
-commodity_array = commodity_scrap()
-print(commodity_array)
+commodity_array = commodity_scrap()["trade"]
+print(len(hs6_array))
+print(len(commodity_array))

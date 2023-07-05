@@ -23,7 +23,8 @@ for commodity_obj in commodity_array:
     period = commodity_obj["T"]
     province = "Alberta"
     for hs6 in hs6_array:
-        if hs6["HS"] == commodity_obj["H"]:
+        print(hs6["HS"])
+        if str(hs6["HS"]) == str(commodity_obj["H"]):
             commodity = hs6["HS"][0:4] + "." + hs6["HS"][4:2] + " - " + hs6["EN"]
             country = commodity_obj["C"]
             state = commodity_obj["S"]
@@ -35,6 +36,7 @@ for commodity_obj in commodity_array:
             sub_category = hs6["HS"][2:2]
             hs4 = ""
             full_hs4 = hs6["HS"][0:4]
+            break
         else:
             commodity = ""
             country = ""

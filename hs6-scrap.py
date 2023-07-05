@@ -16,4 +16,5 @@ def commodity_scrap(year = 1988):
 
 hs6_array = hs6_scrap()
 commodity_array = commodity_scrap()
-print(commodity_array)
+print(len(hs6_array))
+print(len(commodity_array))
